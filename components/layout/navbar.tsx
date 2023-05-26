@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-4">
             { navLinks.map(({ route, title, isActive }) => {
                 return (
-                    <Link href={route} key={route} className={`text-[18px] font-normal relative ${isActive ? 'navLinkActive' : ''}`}> 
+                    <Link href={route} key={route} className={`text-[18px] font-normal relative hover:navLinkActive ${isActive ? 'navLinkActive' : ''}`}> 
                         { title }
                     </Link>
                 )

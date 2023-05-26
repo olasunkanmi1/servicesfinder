@@ -1,1 +1,1 @@
-Property finder is a real estate application created with Next JS using the Bayut API from RapidAPI to display properties available for-sale and for-rent in UAE with advanced property filtering.
+Landing page for HELP, an application that help users find qualified and reliable local Helpers for everything from assembling and installing furniture to moving and cleaning and other everyday tasks.
