@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .navLinkActive {
+    @apply after:content-[''] after:block after:h-[2px] after:w-[20px] after:bg-black after:absolute after:-bottom-2 after:left-[50%] after:-translate-x-[50%]
+  }
+}
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #03C3DE !important;
+  font-weight: 900 !important;
+}
+
+.swiper-button-next::after {
+  content: "\21E8" !important;
+}
+
+.swiper-button-prev::after {
+  content: "\21E6" !important;
+}
+
+.reviews .swiper-button-next::after {
+  transform: translateY(155px);
+}
+
+.reviews .swiper-button-prev::after {
+  transform: translateY(155px);
+}
+
+.services .swiper-button-next::after {
+  transform: translateY(130px);
+}
+
+.services .swiper-button-prev::after {
+  transform: translateY(130px);
+}
+
+.swiper-pagination-bullet {
+  background: #03C3DE !important;
+}
+
+.swiper-pagination {
+  width: fit-content !important;
+  left: 50% !important;
+  bottom: 30px !important;
+  transform: translateX(-50%) !important;
+}
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+}
