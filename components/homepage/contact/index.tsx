@@ -4,7 +4,6 @@ import Image from "next/image"
 import FormComponent from "./form"
 import { FiPhone } from "react-icons/fi"
 
-
 const Contact = () => {
   return (
     <div className='space-y-5'>

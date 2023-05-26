@@ -40,5 +40,4 @@ export interface FieldProps {
     icon: ReactElement<IconType>;
     name: string;
     placeholder: string;
-    error?: boolean;
 }

@@ -58,10 +58,7 @@ const FormComponent = () => {
                           const nameAsType = name as keyof ContactInitialValues
                           
                           return (
-                              <FormField key={name} name={name} placeholder={placeholder} 
-                                  icon={icon}
-                                  error={touched[nameAsType] && errors[nameAsType] !== undefined}
-                              />
+                              <FormField key={name} name={name} placeholder={placeholder} icon={icon} />
                           )
                       }) }
                   

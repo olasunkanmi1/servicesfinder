@@ -1,7 +1,7 @@
 import { Field, ErrorMessage } from 'formik';
 import { FieldProps } from '@types';
 
-const FormField: React.FC<FieldProps> = ({icon, name, placeholder, error,}) => {
+const FormField: React.FC<FieldProps> = ({icon, name, placeholder}) => {
 
     const TextError = (props: any) => {
         return (
