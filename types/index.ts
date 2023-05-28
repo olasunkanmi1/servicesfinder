@@ -41,3 +41,13 @@ export interface FieldProps {
     name: string;
     placeholder: string;
 }
+
+export interface SidebarProps{ 
+    isOpen: boolean;
+    navLinks: { 
+        route: string;
+        title: string;
+        isActive: boolean;
+    }[];
+    toggle: () => void
+}

@@ -12,12 +12,12 @@ const Accordion = ({list, open, setOpen}: AccordionProps) => {
     }
 
     return (
-      <div className="space-y-5 md:w-1/2 lg:w-auto max-w-[480px] mx-auto">
+      <div className="space-y-5 md:w-1/2 w-full max-w-[480px] mx-auto md:mx-0">
         { list.map(({question, answer}) => (
           <div key={question} className={`flex flex-col justify-center items-center py-4 px-8 space-y-4 rounded-2xl shadow-custom overflow-hidden  transition-max-height ease-in-out duration-500 ${open === question ? 'max-h-auto' : 'max-h-[86px]'}`}>
             <div className='flex justify-between items-center w-full cursor-pointer space-x-2' 
             onClick={() => handleOpenAndCLose(question)}>
-              <h4 className='font-medium h-[54px] flex justify-center items-center text-[18px]'> {question} </h4>
+              <h4 className='font-medium h-[54px] flex justify-center items-center ls:text-[18px] w-[calc(100%-28px)]'> {question} </h4>
 
                 <AiOutlineRight size={25} className={`transition ease-in-out duration-300 ${open === question ? '-rotate-180' : ''}`} 
                 />

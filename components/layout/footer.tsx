@@ -19,7 +19,7 @@ const Footer = () => {
       heading: 'Contacts', 
       links: [
         {name: '+351-965-990-000', url: 'tel:+351-965-990-000'},
-        {name: '@helpyou@gmail.com', url: 'mailto:@helpyou@gmail.com'},
+        {name: '@helpyou@gmail.com', url: 'mailto:helpyou@gmail.com'},
       ]
     },
   ];

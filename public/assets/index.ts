@@ -10,13 +10,21 @@ import moving from './services/moving.png'
 import plumbing from './services/plumbing.png'
 import repairs from './services/repairs.png'
 import yard from './services/yard.png'
+import carpentry from './services/carpentry.jpg'
+import electrical from './services/electrical.jpg'
+import painting from './services/painting.jpg'
+import flooring from './services/flooring.jpg'
 import betsy from './reviews/betsy.png'
 import ray from './reviews/ray.png'
 import seema from './reviews/seema.png'
 import soowon from './reviews/soowon.png'
+import emma from './reviews/emma.jpg'
+import michelle from './reviews/michelle.jpg'
+import mike from './reviews/mike.jpg'
 
 export {
     logo, hero, app, googleplay, appstore, contact, 
     cleaning, mounting, moving, plumbing, repairs, 
-    yard, betsy, ray, seema, soowon
+    yard, carpentry, flooring, electrical, painting, 
+    betsy, ray, seema, soowon, emma, michelle, mike
 }

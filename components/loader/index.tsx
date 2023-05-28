@@ -27,7 +27,7 @@ export const Loader = () => {
         }
   
         .loader span {
-          background: rgb(8, 71, 168);
+          background: white;
           -webkit-animation: loader 1s  infinite;
             animation: loader 1s  infinite;
         }
@@ -54,30 +54,30 @@ export const Loader = () => {
   
         @keyframes loader {
           0% {
-            background: rgba(8, 71, 168, .65);
+            background: rgba(250, 250, 250, .65);
           }
           25% {
-            background: rgba(8, 71, 168);
+            background: rgba(250, 250, 250);
           }
           50% {
-            background: rgba(8, 71, 168, .65);
+            background: rgba(250, 250, 250, .65);
           }
           100% {
-            background: rgba(8, 71, 168, .65);
+            background: rgba(250, 250, 250, .65);
           }
         }
         @-webkit-keyframes loader {
           0% {
-            background: rgba(8, 71, 168, .65);
+            background: rgba(250, 250, 250, .65);
           }
           25% {
-            background: rgba(8, 71, 168);
+            background: rgba(250, 250, 250);
           }
           50% {
-            background: rgba(8, 71, 168, .65);
+            background: rgba(250, 250, 250, .65);
           }
           100% {
-            background: rgba(8, 71, 168, .65);
+            background: rgba(250, 250, 250, .65);
           }
         }
         `}</style>

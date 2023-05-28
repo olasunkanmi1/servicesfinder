@@ -3,7 +3,7 @@ import Navbar from './navbar';
 import Footer from './footer';
 import { LayoutProps } from '@types'
 
-const Layout: React.FC<LayoutProps> = ({ title, children }) => {
+const Layout: React.FC<LayoutProps> = ({ title, children }) => {  
   return (
     <div className="bg-[#fefefe] w-full mx-auto">
       <Head>
@@ -12,7 +12,7 @@ const Layout: React.FC<LayoutProps> = ({ title, children }) => {
       </Head>
 
       <div className='w-full space-y-10 pb-10'>
-          <Navbar/>
+          <Navbar />
           <div className='space-y-[50px]'> { children } </div>
       </div>
       <Footer />

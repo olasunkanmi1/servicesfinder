@@ -27,7 +27,7 @@ const FAQs = () => {
     <div className='space-y-5 layout'>
       <Heading text='Question' heading='Frequently asked questions' />
 
-      <div className="md:flex md:space-x-8 justify-center space-y-5 md:space-y-0">
+      <div className="md:flex md:space-x-8 justify-center space-y-5 md:space-y-0 mx-auto">
         <Accordion list={faqsArr.left} open={open} setOpen={setOpen} />
         <Accordion list={faqsArr.right} open={open} setOpen={setOpen} />
       </div>
