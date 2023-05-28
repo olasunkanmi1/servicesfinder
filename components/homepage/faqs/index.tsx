@@ -24,10 +24,10 @@ const FAQs = () => {
 
   
   return (
-    <div className='space-y-5'>
+    <div className='space-y-5 layout'>
       <Heading text='Question' heading='Frequently asked questions' />
 
-      <div className="flex space-x-8 justify-center">
+      <div className="md:flex md:space-x-8 justify-center space-y-5 md:space-y-0">
         <Accordion list={faqsArr.left} open={open} setOpen={setOpen} />
         <Accordion list={faqsArr.right} open={open} setOpen={setOpen} />
       </div>

@@ -5,11 +5,14 @@
 @tailwind utilities;
 
 @layer components {
+  .layout {
+    @apply xl:max-w-6xl m-auto px-3 sm:px-8 xl:px-0
+  }
+
   .navLinkActive {
     @apply after:content-[''] after:block after:h-[2px] after:w-[20px] after:bg-black after:absolute after:-bottom-2 after:left-[50%] after:-translate-x-[50%]
   }
 }
-
 
 html,
 body {
@@ -28,47 +31,17 @@ a {
   box-sizing: border-box;
 }
 
-.swiper-button-next, .swiper-button-prev {
-  color: #03C3DE !important;
-  font-weight: 900 !important;
-}
-
-.swiper-button-next::after {
-  content: "\21E8" !important;
-}
-
-.swiper-button-prev::after {
-  content: "\21E6" !important;
-}
-
-.reviews .swiper-button-next::after {
-  transform: translateY(155px);
-}
-
-.reviews .swiper-button-prev::after {
-  transform: translateY(155px);
-}
-
-.services .swiper-button-next::after {
-  transform: translateY(130px);
-}
-
-.services .swiper-button-prev::after {
-  transform: translateY(130px);
-}
-
 .swiper-pagination-bullet {
+  width: 13px !important;
+  height: 13px !important;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background: white !important;
+  border: 1px solid #03C3DE !important;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #03C3DE !important;
-}
-
-.swiper-pagination {
-  width: fit-content !important;
-  left: 50% !important;
-  bottom: 30px !important;
-  transform: translateX(-50%) !important;
-}
-
-.swiper-pagination-bullet {
-  width: 10px !important;
-  height: 10px !important;
 }

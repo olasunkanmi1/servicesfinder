@@ -15,8 +15,8 @@ const Navbar = () => {
     ];
 
   return (
-    <div className='flex justify-center items-center xl:w-[1152px]  h-[75px] top-0 bg-[#fefefe] z-[22] relative'>
-        <Link href="/" className='absolute left-0'> 
+    <div className='layout flex justify-center items-center h-[75px] top-0 bg-[#fefefe] z-[22] relative'>
+        <Link href="/" className='absolute left-3 sm:left-8 xl:left-0'> 
             <Image src={logo} alt="logo" width={75} height={60} priority />
         </Link>
 

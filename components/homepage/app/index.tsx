@@ -4,7 +4,7 @@ import {app} from '@public'
 
 const App = () => {
   return (
-    <div className='space-y-4'>
+    <div className='space-y-4 '>
       <Heading text='Join us' heading='Our app' />
     
       <SectionLayout

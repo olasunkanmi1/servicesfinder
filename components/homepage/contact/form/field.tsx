@@ -12,7 +12,7 @@ const FormField: React.FC<FieldProps> = ({icon, name, placeholder}) => {
     }
 
   return (
-    <div className="w-[300px]">
+    <div className="w-full md:w-[300px]">
         <div className='flex justify-between items-center w-full'>
             <div className='flex space-x-2 w-full shadow-custom px-4 py-3 rounded-2xl'>
                 {icon}

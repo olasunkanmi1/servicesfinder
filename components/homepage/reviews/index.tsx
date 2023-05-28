@@ -1,18 +1,14 @@
-import { useState, useEffect } from 'react'
 import Image from 'next/image';
-import { Navigation, A11y, Pagination } from 'swiper';
+import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { AiFillStar } from 'react-icons/ai';
 import Heading from 'components/heading';
 import { soowon, betsy, ray, seema } from "@public"
 
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { AiFillStar } from 'react-icons/ai';
 
 const Reviews = () => {
-  const [screenSize, setScreenSize] = useState<number | undefined>(undefined);
-
   const reviews = [
     { 
       img: soowon, 
@@ -52,27 +48,22 @@ const Reviews = () => {
     },
   ]
 
-  useEffect(() => {
-    window.addEventListener('resize', () => setScreenSize(window.innerWidth))
-  }, [])
-
   return (
-    <div className='space-y-4'>
+    <div className='space-y-4 max-w-[1400px] mx-auto overflow-hidden'>
       <Heading text='Reviews' heading='Feedback from you' />
 
       <Swiper
-        modules={[Navigation, A11y, Pagination]}
+        modules={[Pagination]}
         pagination={{clickable: true}}
-        spaceBetween={10}
-        slidesPerView={4}
-        navigation
-        className='h-[390px] reviews'
+        spaceBetween={20}
+        slidesPerView={'auto'}
+        className='h-[390px] w-full !px-3 sm:!px-8 xl:!px-[calc((100vw-1152px)/2)] xxl:!px-[124px]'
       >
         {
-          reviews.map(({img, name, comment, date},) => {
+          reviews.map(({img, name, comment, date}) => {
             return (
-              <SwiperSlide key={name} className='space-y-1 rounded-lg max-h-[320px]'>
-                <div className='h-full w-[calc(100%-10px)] flex flex-col justify-between items-center shadow-custom mx-auto p-3 rounded-2xl mt-3'>
+              <SwiperSlide key={name} className='space-y-1 rounded-lg max-w-[260px] max-h-[320px]'>
+                <div className='h-full w-full flex flex-col justify-between items-center shadow-custom mx-auto p-3 rounded-2xl mt-3'>
                   <div className='flex flex-col justify-center items-center '>
                     <div className="w-[70px] h-[70px] rounded-full relative">
                       <Image src={img} alt="logo"  fill priority />
@@ -85,7 +76,7 @@ const Reviews = () => {
                       )) }
                   </div>
 
-                    <p className='text-sm font-normal leading-none mt-4'> {comment} </p>
+                    <p className='text-sm font-normal leading-tight mt-4'> {comment} </p>
                   </div>
 
                   <p className='font-sm font-normal ml-auto w-fit pr-3'> {date} </p>
